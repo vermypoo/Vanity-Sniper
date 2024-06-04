@@ -20,6 +20,7 @@ while True:
 
         if response.status_code == 404:
             print(f'The vanity URL "{vanity_code}" is available.')
+            time.sleep(1)
 
             patch_response = requests.patch(
                 settings_url,
@@ -32,15 +33,17 @@ while True:
                 break
             else:
                 print(f'Failed to set vanity URL: {patch_response.text}')
+                time.sleep(60)
 
         elif response.status_code == 200:
             print(f'The vanity URL "{vanity_code}" is not available.')
+            time.sleep(60)
 
         else:
             print(f'Unexpected status code: {response.status_code}')
+            time.sleep(60)
 
     except requests.RequestException as e:
         print(f'Error occurred: {e}')
-        break
+        time.sleep(60)
 
-    time.sleep(60)
