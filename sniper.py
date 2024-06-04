@@ -37,7 +37,7 @@ while True:
 
         elif response.status_code == 200:
             print(f'The vanity URL "{vanity_code}" is not available.')
-            time.sleep(60)
+            time.sleep(1)
 
         else:
             print(f'Unexpected status code: {response.status_code}')
