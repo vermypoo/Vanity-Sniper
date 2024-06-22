@@ -15,5 +15,5 @@ pip install requests
 
 ## Use
 - Pip Install LIbraries
-- Put Your Token, Server ID And Token In
+- Put Your Server ID And Token In
 - Enjoy <3
