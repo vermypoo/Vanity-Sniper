@@ -1,4 +1,4 @@
-# Vanity-Sniper
+# Vanity-Sniper (OUTDATED)
 ❗ ❗ I Am Not Responsible For Any Damage Done.
 
 ❗ Basic Discord Python Vanity Sniper (EDUCATIONAL USE)
